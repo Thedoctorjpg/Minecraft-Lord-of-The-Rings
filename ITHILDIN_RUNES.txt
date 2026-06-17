@@ -1,0 +1,39 @@
+Ithildin + Elvish Runes — Legacy 1.7.10 LOTRO Upgrade
+======================================================
+
+Ithildin material:
+  assets/lotr/textures/items/ithildin.png
+
+Ithildin block (derived — moon-glow carved stone):
+  assets/lotr/textures/blocks/blockIthildin.png
+
+Elvish rune stonework:
+  assets/lotr/textures/blocks/
+    brick2_highElvenCarved.png
+    brick3_highElven.png, brick3_highElvenCracked.png, brick3_highElvenMossy.png
+    brick4_highElvenGold.png, brick4_highElvenSilver.png
+    pillar_highElven_face.png + side variants
+    highElvenCraftingTable_top.png, highElvenCraftingTable_side.png
+
+Glowing elven weapons (rune script on blade):
+  assets/lotr/textures/items/
+    swordElven_glowing.png, swordHighElven_glowing.png, swordWoodElven_glowing.png
+    swordRivendell_glowing.png, swordGondolin_glowing.png
+    daggerHighElven_glowing.png, daggerHighElvenPoisoned_glowing.png
+
+LOTRO visual targets
+--------------------
+  Moon-white / pale blue rune lines (Moria west-gate feel)
+  Dark cool stone — runes only visible as luminous script
+  Ithildin ingot: starlight silver, softer than mithril blue
+  Glowing swords: stronger ethereal bloom on elven script
+
+Run upgrade
+-----------
+  python tools/upgrade_ithildin_runes.py
+  python tools/upgrade_ithildin_runes.py --blocks-only
+  python tools/upgrade_ithildin_runes.py --weapons-only
+
+Note: Dwarven ithildin doors need textures from the Legacy mod JAR
+(blocks/door*.png). Extract with:
+  python tools/extract_mod_textures.py mod.jar --filter ithildin

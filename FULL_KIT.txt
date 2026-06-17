@@ -1,0 +1,57 @@
+LOTR → LOTRO Resource Upgrade — FULL KIT (Legacy 1.7.10)
+=========================================================
+
+Mod source: LOTRModfork.v36.35.jar (quentin452 fork)
+Cached at: tools/mod_cache/LOTRModfork.v36.35.jar
+
+CONTENT SUMMARY
+---------------
+  Rohan armour .............. 10 item textures
+  Mithril ................... 18 items + blocks + armor layers
+  Ithildin + elvish runes ... 22 blocks/items
+  Destructible environments . 79 textures + 104 vanilla .ogg + 10 LOTR break .ogg
+
+DESTRUCTIBLE ENVIRONMENTS (full kit)
+------------------------------------
+  Break overlays:
+    assets/minecraft/textures/blocks/destroy_stage_0.png … _9.png
+
+  All 44 mod-registered cracked blocks (exact JAR names):
+    assets/lotr/textures/blocks/
+      brick_gondorCracked.png, brick_mordorCracked.png, brick_galadhrimCracked.png
+      brick2_arnorCracked.png, brick3_highElvenCracked.png, … (see tools/cracked_block_index.json)
+
+  Moria ithildin door glow panels (25):
+    assets/lotr/textures/blocks/dwarvenDoorIthildin_glow_*.png
+
+  Dig / step / break sounds (MC 1.7.10):
+    assets/minecraft/sounds/dig/*.ogg
+    assets/minecraft/sounds/step/*.ogg
+    assets/minecraft/sounds/random/*.ogg
+    assets/minecraft/sounds.json
+
+  LOTR block break sounds:
+    assets/lotr/sounds/block/treasure/break*.ogg
+    assets/lotr/sounds/block/plate/break.ogg
+
+REBUILD COMMANDS
+----------------
+  python tools/build_full_destructible_kit.py
+  python tools/upgrade_mithril.py
+  python tools/upgrade_ithildin_runes.py
+  powershell -ExecutionPolicy Bypass -File tools/upgrade_rohan_armor.ps1 -IncludeWeapons
+
+INSTALL
+-------
+  1. Minecraft 1.7.10 + Forge + LOTRModfork v36.35
+  2. Zip this folder (pack.mcmeta at root)
+  3. Drop in .minecraft/resourcepacks/
+  4. Enable pack above vanilla
+  5. OptiFine 1.7.10 recommended for shaders
+
+IN-GAME TESTS
+-------------
+  - Mine Gondor stone → dusty LOTRO crack overlay
+  - Place brick_gondorCracked → battle-scarred wall
+  - Find Moria ithildin door → moon-glow runes at night
+  - Break treasure blocks → LOTR break SFX

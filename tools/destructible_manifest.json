@@ -1,0 +1,41 @@
+{
+  "description": "Destructible environments — break overlays, ruined stonework, dig sounds (Legacy 1.7.10)",
+  "base_repo": "https://raw.githubusercontent.com/xiaoye-MClotr/LotRMC-1.7.10-Renewed_Textures_Backported-ResourcePack/main",
+  "destroy_stages": 10,
+  "ruin_enhance": [
+    "textures/blocks/brick3_highElvenCracked.png"
+  ],
+  "ruin_derive": [
+    {
+      "source": "textures/blocks/brick2_highElvenCarved.png",
+      "output": "textures/blocks/brick2_highElvenCarvedCracked.png",
+      "severity": 0.5
+    },
+    {
+      "source": "textures/blocks/pillar_gondor_face.png",
+      "output": "textures/blocks/pillar_gondor_faceCracked.png",
+      "severity": 0.45
+    },
+    {
+      "source": "textures/blocks/pillar_rohan_side.png",
+      "output": "textures/blocks/pillar_rohan_sideCracked.png",
+      "severity": 0.45
+    },
+    {
+      "source": "textures/blocks/gondorianCraftingTable_top.png",
+      "output": "textures/blocks/gondorianCraftingTable_topCracked.png",
+      "severity": 0.4
+    },
+    {
+      "source": "textures/blocks/mithrilBars.png",
+      "output": "textures/blocks/mithrilBarsCracked.png",
+      "severity": 0.35
+    }
+  ],
+  "lotro_style": {
+    "crack_color": [210, 200, 185, 220],
+    "crack_shadow": [80, 70, 65, 180],
+    "dust_tint": [1.02, 0.98, 0.92],
+    "weathering": 0.88
+  }
+}

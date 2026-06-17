@@ -1,0 +1,58 @@
+LOTR Minecraft → LOTRO Resource Upgrade — LEGACY 1.7.10 targets
+================================================================
+Active profile: Legacy | pack_format: 1 | Forge 1.7.10
+
+Extract from mod JAR:
+  python tools/extract_mod_textures.py "C:\path\to\lotr-mod.jar"
+  python tools/extract_mod_textures.py mod.jar --filter mithril
+
+Upscale into pack (Legacy uses plural folders):
+  python tools/upgrade_texture.py -i source_textures\textures\blocks -o assets\lotr\textures\blocks
+  python tools/upgrade_texture.py -i source_textures\textures\items  -o assets\lotr\textures\items
+
+Phase 1 — Ores & metals
+  assets/lotr/textures/blocks/
+    oreMithril.png          (verify exact name in your JAR — may vary by mod version)
+    oreSilver.png
+    oreCopper.png
+    oreTin.png
+    blockMithril.png
+    blockIthildin.png
+  assets/lotr/textures/items/
+    ingotMithril.png
+    ingotSilver.png
+    nuggetMithril.png
+    ithildin.png
+
+Phase 2 — Armor & weapons
+  assets/lotr/textures/items/
+    helmetGondor.png, bodyGondor.png, legsGondor.png, bootsGondor.png
+    helmetRohan.png, bodyRohan.png, legsRohan.png, bootsRohan.png
+    helmetGaladhrim.png, bodyGaladhrim.png, legsGaladhrim.png, bootsGaladhrim.png
+    swordMithril.png, pickaxeMithril.png, swordElven.png
+
+Phase 3 — Blocks & stonework
+  assets/lotr/textures/blocks/
+    brickGondor.png, brickRohan.png, brickElven.png
+    brickMordor.png, brickDwarven.png
+    plankMallorn.png, plankMirkOak.png
+
+Phase 4 — GUI / HUD
+  assets/lotr/textures/gui/
+    (names vary — extract gui/ folder from JAR and match filenames exactly)
+
+Phase 5 — Sounds
+  Legacy 1.7.10 uses legacy sound registration; custom .ogg overrides are limited
+  compared to modern packs. Extract assets/lotr/sounds/ from the JAR first, then
+  replace matching .ogg files in the same paths.
+
+Legacy install checklist
+------------------------
+  1. Minecraft 1.7.10 + Forge 10.13.4.x (dedicated instance — not vanilla 26.x)
+  2. Install LOTR Mod Legacy from CurseForge (1.7.10 file)
+  3. Optional: OptiFine 1.7.10 HD U E7 for CTM/shaders LOTRO cinematic look
+  4. Enable this pack above vanilla, below any base LOTR texture packs
+  5. Zip pack root (pack.mcmeta inside) → .minecraft/resourcepacks/
+
+Switch back to Renewed:
+  python tools/configure_mod.py renewed

@@ -1,0 +1,23 @@
+{
+  "mod_branch": "legacy",
+  "minecraft_version": "1.7.10",
+  "pack_format": 1,
+  "mod_loader": "forge",
+  "mod_jar_hint": "The-Lord-of-the-Rings-Mod-legacy-*.jar (CurseForge, MC 1.7.10)",
+  "texture_roots": {
+    "block": "assets/lotr/textures/blocks",
+    "item": "assets/lotr/textures/items",
+    "entity": "assets/lotr/textures/entity",
+    "gui": "assets/lotr/textures/gui"
+  },
+  "sounds_root": "assets/lotr/sounds",
+  "notes": "Active profile: legacy. Texture overrides must mirror paths inside the mod JAR. Extract with: python tools/extract_mod_textures.py <path-to-mod.jar>",
+  "mod_jar_local": "D:\\The Lord of the Rings Online\\lotr-minecraft-to-lotro-upgrade\\tools\\mod_cache\\LOTRModfork.v36.35.jar",
+  "mod_version": "v36.35 (quentin452 fork)",
+  "destructible_kit": {
+    "cracked_blocks": 44,
+    "ithildin_door_panels": 25,
+    "destroy_stages": 10,
+    "sound_events": 104
+  }
+}

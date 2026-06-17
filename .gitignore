@@ -1,0 +1,14 @@
+# Large mod binaries — re-download via setup_profiles.py
+tools/mod_cache/*.jar
+tools/mod_cache/forge_extract/
+
+# Extracted source textures (regenerated from JAR)
+source_textures/
+
+# Build staging
+tools/_pack_staging/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp

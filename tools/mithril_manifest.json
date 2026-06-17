@@ -1,0 +1,42 @@
+{
+  "description": "Legacy 1.7.10 mithril — LOTRO blue-silver shimmer upgrade",
+  "base_repo": "https://raw.githubusercontent.com/xiaoye-MClotr/LotRMC-1.7.10-Renewed_Textures_Backported-ResourcePack/main",
+  "items": [
+    "textures/items/mithril.png",
+    "textures/items/mithrilNugget.png",
+    "textures/items/mithrilRing.png",
+    "textures/items/mithrilBook.png",
+    "textures/items/helmetMithril.png",
+    "textures/items/bodyMithril.png",
+    "textures/items/legsMithril.png",
+    "textures/items/bootsMithril.png",
+    "textures/items/swordMithril.png",
+    "textures/items/helmetDwarvenMithril.png",
+    "textures/items/bodyDwarvenMithril.png",
+    "textures/items/legsDwarvenMithril.png",
+    "textures/items/bootsDwarvenMithril.png"
+  ],
+  "blocks": [
+    "textures/blocks/mithrilBars.png"
+  ],
+  "armor_layers": [
+    "armor/mithril_1.png",
+    "armor/mithril_2.png",
+    "armor/dwarven_mithril_1.png",
+    "armor/dwarven_mithril_2.png"
+  ],
+  "animated_mcmeta": [
+    "textures/items/mithril.png",
+    "textures/items/mithrilNugget.png",
+    "textures/items/swordMithril.png"
+  ],
+  "lotro_style": {
+    "highlight_blue_boost": 1.28,
+    "highlight_red_scale": 0.82,
+    "silver_green_boost": 1.08,
+    "shadow_blue_depth": 1.12,
+    "contrast": 1.4,
+    "glow_threshold": 165,
+    "glow_color": [160, 210, 255, 28]
+  }
+}

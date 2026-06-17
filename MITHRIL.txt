@@ -1,0 +1,40 @@
+Mithril — Legacy 1.7.10 LOTRO Upgrade
+=====================================
+
+Resources (animated shimmer — .mcmeta preserved):
+  assets/lotr/textures/items/
+    mithril.png, mithril.png.mcmeta
+    mithrilNugget.png, mithrilNugget.png.mcmeta
+    mithrilRing.png
+    mithrilBook.png
+
+Blocks:
+  assets/lotr/textures/blocks/
+    mithrilBars.png
+
+Mithril armour (item icons + worn layers):
+  assets/lotr/textures/items/
+    helmetMithril.png, bodyMithril.png, legsMithril.png, bootsMithril.png
+    swordMithril.png, swordMithril.png.mcmeta
+  assets/lotr/armor/
+    mithril_1.png, mithril_2.png
+
+Dwarven mithril variant:
+  assets/lotr/textures/items/
+    helmetDwarvenMithril.png, bodyDwarvenMithril.png,
+    legsDwarvenMithril.png, bootsDwarvenMithril.png
+  assets/lotr/armor/
+    dwarven_mithril_1.png, dwarven_mithril_2.png
+
+LOTRO visual targets
+--------------------
+  Cool blue-silver plate (not warm gold like Rohan)
+  Luminous edge highlights — true-silver gleam
+  Deep blue-violet shadows in recesses
+  Animated ingot/nugget/sword shimmer retained
+
+Run upgrade
+-----------
+  python tools/upgrade_mithril.py
+  python tools/upgrade_mithril.py --resources-only
+  python tools/upgrade_mithril.py --armor-only

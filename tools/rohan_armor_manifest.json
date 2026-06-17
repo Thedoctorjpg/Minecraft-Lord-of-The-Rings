@@ -1,0 +1,26 @@
+{
+  "description": "Legacy 1.7.10 Rohirric armour + weapons — LOTRO upgrade targets",
+  "base_url": "https://raw.githubusercontent.com/xiaoye-MClotr/LotRMC-1.7.10-Renewed_Textures_Backported-ResourcePack/main/assets/lotr/textures/items",
+  "armor": [
+    "helmetRohan.png",
+    "bodyRohan.png",
+    "legsRohan.png",
+    "bootsRohan.png",
+    "helmetRohanMarshal.png",
+    "bodyRohanMarshal.png",
+    "legsRohanMarshal.png",
+    "bootsRohanMarshal.png"
+  ],
+  "weapons": [
+    "swordRohan.png",
+    "spearRohan.png"
+  ],
+  "lotro_style": {
+    "metal_warmth": 1.12,
+    "leather_warmth": 1.08,
+    "contrast": 1.35,
+    "sharpness_passes": 2,
+    "marshal_green_tint": [0.92, 1.05, 0.88],
+    "plate_highlight": [255, 220, 140, 18]
+  }
+}

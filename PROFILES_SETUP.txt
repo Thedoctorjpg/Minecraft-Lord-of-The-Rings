@@ -1,0 +1,43 @@
+LOTR Legacy — Full Profile Setup
+================================
+
+Forge version : 1.7.10-Forge10.13.4.1614-1.7.10
+Game directory: C:\Users\david\AppData\Roaming\.minecraft\profiles\lotr-legacy-1710
+Mod           : LOTRModfork.v36.35.jar
+Resource pack : lotr-minecraft-to-lotro-upgrade.zip (enabled)
+
+PROFILES CREATED
+----------------
+1) LOTR Legacy + LOTRO Pack
+   Version: 1.7.10-Forge10.13.4.1614-1.7.10
+   Game dir: C:\Users\david\AppData\Roaming\.minecraft\profiles\lotr-legacy-1710
+
+2) LOTRO Pack Test (1.7.10 vanilla)
+   Version: 1.7.10 (vanilla — break overlays/sounds only)
+   Game dir: C:\Users\david\AppData\Roaming\.minecraft\profiles\lotro-pack-test-1710
+
+MINECRAFT LAUNCHER (recommended)
+--------------------------------
+1. Open Minecraft Launcher
+2. Installations → New installation
+3. Name: LOTR Legacy + LOTRO Pack
+4. Version: 1.7.10-Forge10.13.4.1614-1.7.10
+5. Game directory: C:\Users\david\AppData\Roaming\.minecraft\profiles\lotr-legacy-1710
+6. JVM arguments: -Xms1G -Xmx3G
+7. Create → Play
+
+IF FORGE VERSION NOT IN LIST
+----------------------------
+  python tools/setup_profiles.py
+  Restart launcher
+  Enable 'Historical versions' in launcher settings if needed
+
+IN-GAME TEST
+------------
+  Options → Resource Packs → pack should be active
+  Mine stone → LOTRO crack overlay
+  /give or creative → Rohirric armour, mithril, cracked bricks
+
+RE-RUN SETUP
+------------
+  python tools/setup_profiles.py

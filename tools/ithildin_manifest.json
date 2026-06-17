@@ -1,0 +1,46 @@
+{
+  "description": "Legacy 1.7.10 ithildin + elvish runes — LOTRO moon-glow upgrade",
+  "base_repo": "https://raw.githubusercontent.com/xiaoye-MClotr/LotRMC-1.7.10-Renewed_Textures_Backported-ResourcePack/main",
+  "ithildin_material": [
+    "textures/items/ithildin.png"
+  ],
+  "rune_blocks": [
+    "textures/blocks/brick2_highElvenCarved.png",
+    "textures/blocks/brick3_highElven.png",
+    "textures/blocks/brick3_highElvenCracked.png",
+    "textures/blocks/brick3_highElvenMossy.png",
+    "textures/blocks/brick4_highElvenGold.png",
+    "textures/blocks/brick4_highElvenSilver.png",
+    "textures/blocks/pillar_highElven_face.png",
+    "textures/blocks/pillar_highElven_side.png",
+    "textures/blocks/pillar_highElven_sideBottom.png",
+    "textures/blocks/pillar_highElven_sideMiddle.png",
+    "textures/blocks/pillar_highElven_sideTop.png",
+    "textures/blocks/highElvenCraftingTable_top.png",
+    "textures/blocks/highElvenCraftingTable_side.png"
+  ],
+  "glowing_weapons": [
+    "textures/items/swordElven_glowing.png",
+    "textures/items/swordHighElven_glowing.png",
+    "textures/items/swordWoodElven_glowing.png",
+    "textures/items/swordRivendell_glowing.png",
+    "textures/items/swordGondolin_glowing.png",
+    "textures/items/daggerHighElven_glowing.png",
+    "textures/items/daggerHighElvenPoisoned_glowing.png"
+  ],
+  "derived_blocks": [
+    {
+      "output": "textures/blocks/blockIthildin.png",
+      "source": "textures/blocks/brick2_highElvenCarved.png",
+      "mode": "ithildin_block"
+    }
+  ],
+  "lotro_style": {
+    "rune_lum_threshold": 48,
+    "rune_bright_threshold": 115,
+    "moon_glow_color": [200, 230, 255, 42],
+    "ithildin_glow_color": [220, 240, 255, 50],
+    "contrast": 1.45,
+    "stone_cool_factor": 0.62
+  }
+}

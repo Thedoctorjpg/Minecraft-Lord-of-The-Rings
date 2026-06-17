@@ -1,0 +1,44 @@
+Rohan Armour — Legacy 1.7.10 LOTRO Upgrade
+==========================================
+
+Item icons + worn armour layers (same files in Legacy):
+  assets/lotr/textures/items/
+    helmetRohan.png
+    bodyRohan.png
+    legsRohan.png
+    bootsRohan.png
+    helmetRohanMarshal.png   (captain/marshal tier — green-gold trim)
+    bodyRohanMarshal.png
+    legsRohanMarshal.png
+    bootsRohanMarshal.png
+
+Optional weapons (same folder):
+    swordRohan.png
+    spearRohan.png
+
+LOTRO visual targets
+--------------------
+  Plate:     warm gold-silver, sharp engraved edges, not flat grey steel
+  Leather:   rich brown undertones under mail and at joints
+  Marshal:   subtle Rohan green on trim (horse-lord captain look)
+  Overall:   higher contrast than vanilla — reads well with OptiFine + shaders
+
+Run the upgrade pipeline
+------------------------
+  python tools/download_rohan_bases.py
+  powershell -ExecutionPolicy Bypass -File tools/upgrade_rohan_armor.ps1
+  powershell -ExecutionPolicy Bypass -File tools/upgrade_rohan_armor.ps1 -IncludeWeapons
+
+Manual polish (Aseprite / Photoshop)
+------------------------------------
+  1. Open bodyRohan.png — enlarge to 128x64 or 256x128 workspace
+  2. Add engraved horse/eothéod motifs on chest plate (LOTRO Rohirrim reference)
+  3. Deepen leather straps; add specular highlights on pauldrons
+  4. Marshal set: paint green cloth/tabard accents on bodyRohanMarshal.png
+  5. Re-export as PNG with transparency preserved
+
+In-game test
+------------
+  /give or craft Rohirric helmet/chest/legs/boots
+  Equip full set — verify layer tints match in F5 third-person view
+  Stack pack above "Renewed Textures Backported" if using that base

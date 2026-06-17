@@ -1,0 +1,4 @@
+Pillow>=10.0.0
+
+# If pip fails with "No module named pip" on D:\python.exe:
+#   Ensure D:\python314._pth contains Lib\site-packages (see project tools/README note)

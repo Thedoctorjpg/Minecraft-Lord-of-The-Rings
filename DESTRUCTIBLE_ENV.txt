@@ -1,0 +1,36 @@
+Destructible Environments — FULL KIT (Legacy v36.35)
+====================================================
+
+Run once (or after mod update):
+  python tools/build_full_destructible_kit.py
+
+INCLUDED
+--------
+  [x] destroy_stage_0 … 9  (global mining crack overlays)
+  [x] 44 cracked block textures — exact filenames from LOTRModfork.v36.35.jar
+  [x] 25 dwarvenDoorIthildin_glow_* panels (Moria moon-runes)
+  [x] 104 MC 1.7.10 dig/step/random .ogg files
+  [x] 10 LOTR block break .ogg files
+  [x] assets/minecraft/sounds.json
+
+Cracked block index (authoritative list):
+  tools/cracked_block_index.json
+
+Factions with cracked stonework
+-------------------------------
+  Gondor, Mordor, Galadhrim, Arnor, Angmar, Dol Guldur
+  High Elven, Wood Elven, Near Harad, Dwarven, Tauredain
+  Dorwinion, Rohan rustic, Rhûn, Dale, Morwaith, Umbar
+  Pillars: arnor, dwarven, galadhrim, high elven, wood elven
+  redBrick_cracked
+
+Sounds
+------
+  Vanilla dig/stone, dig/wood, dig/gravel, dig/grass, dig/sand, dig/snow
+  Step/stone, step/wood, random/break
+  LOTR treasure + plate break (mod namespace)
+
+Limits
+------
+  Resource packs cannot add physics destruction. This kit covers:
+  visual break feedback, ruined build blocks, ithildin door glow, SFX.
